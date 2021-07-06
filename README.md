@@ -11,4 +11,4 @@ Phase3: Retrieve user input, to connect to the hardware `(done)`
 
 Please make sure you click on save before clicking ON, so that you retrive the last saved motor values.
 `Feel free to check the demo video through the onedrive link below!`
-https://1drv.ms/v/s!AtQxpRwEANFtgaV70S1lKqtAeSojaw?e=GJvpWg
+https://1drv.ms/v/s!AtQxpRwEANFtgaV7E5PFZl1Rz_5NgA?e=19OBgU
