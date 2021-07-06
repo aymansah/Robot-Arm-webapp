@@ -11,5 +11,6 @@
 
     $q = "INSERT INTO motors (m1, m2, m3, m4, m5, m6) VALUES ($m1, $m2, $m3, $m4, $m5, $m6) ";
     mysqli_query($con, $q);
-    header("location: index.php");
+    CloseCon($con);
+    header("location: index.html");
 ?>
