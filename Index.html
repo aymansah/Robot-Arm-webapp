@@ -7,56 +7,65 @@
 <body>
 <div class="sliders">
   <h1 class="title">Robot Arm angles Contorl Panel </h1>
-
-  <div class="sliderContainer">
+<form method="POST" action="saveAngles.php">
+   <div class="sliderContainer">
     <label>Motor 01</label>
-    <input type="range" value="90" min="0" max="180" id="slider1" class="slider">
+    <input type="range" value="90" min="0" max="180" id="slider1" name="m1" class="slider">
     <span class="output" id="output1"></span>
    </div>
    
    <div class="sliderContainer">
          <label>Motor 02</label>
 
-    <input type="range" value="0" min="0" max="180" id="slider2" class="slider">
+    <input type="range" value="0" min="0" max="180" id="slider2" name="m2" class="slider">
     <span class="output" id="output2"></span>
    </div>
    
    <div class="sliderContainer">
          <label>Motor 03</label>
 
-    <input type="range" value="0" min="0" max="180" id="slider3" class="slider">
+    <input type="range" value="0" min="0" max="180" id="slider3" name="m3" class="slider">
     <span class="output" id="output3"></span>
    </div>
 
    <div class="sliderContainer">
          <label>Motor 04</label>
 
-    <input type="range" value="0" min="0" max="180" id="slider4" class="slider">
+    <input type="range" value="0" min="0" max="180" id="slider4" name="m4" class="slider">
     <span class="output" id="output4"></span>
    </div>
    
    <div class="sliderContainer">
          <label>Motor 05</label>
 
-    <input type="range" value="0" min="0" max="180" id="slider5" class="slider">
+    <input type="range" value="0" min="0" max="180" id="slider5" name="m5" class="slider">
     <span class="output" id="output5"></span>
    </div>
 
    <div class="sliderContainer">
          <label>Motor 06</label>
 
-    <input type="range" value="0" min="0" max="180" id="slider6" class="slider">
+    <input type="range" value="0" min="0" max="180" id="slider6" name="m6" class="slider">
     <span class="output" id="output6"></span>
    </div>
-</div>
     
+  <button class="button" type="submit">Save</button>
+</form>
+  <form id="ON" method="POST" action="displayAngles.php">
+    <button class="button" type="submit">ON</button>
 
+  </form>
+  <button id="on-btn"class="button" type="submit">ON</button>
 
-
-
-  <button class="button button2">Save</button>
-<button class="button button2">On</button>
+</div>
+  
 
 <script type="text/javascript" src="arm.js"></script>
+<script>
+  var form = document.getElementById("ON");
+  document.getElementById("on-btn").addEventListener("click", function () {
+  form.submit();
+});
+</script>
 </body>
 </html>
