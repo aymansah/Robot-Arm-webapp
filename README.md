@@ -9,3 +9,4 @@ Phase1: UI design to control the 6 robot motor angels `(done)`
 Phase2: Connect the Front end with a database, save user input `(done)`
 ***
 Phase3: Retrieve user input, to connect to the hardware `(done)`
+Please make sure you click on save before clicking ON, so that you retrive the last saved motor values.
